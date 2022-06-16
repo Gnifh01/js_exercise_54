@@ -1,3 +1,5 @@
+//QUEST'ESERCIZIO UNISCE ID A PERSON INFO, CREANDO UN UNIO OGGETTO
+
 const person = {
   id: 1,
   firstName: "Mario",
@@ -13,9 +15,6 @@ const personInfo = {
   age: person.age,
 };
 
-// ASSOCIO ID:ID2 PER MANTENERE IL CODICE SOPRA ED EVITARE DI COMMENTARLO
+console.log({ ...{ id }, ...personInfo });
 
-let { id: id2, ...personInfo2 } = person
 
-console.log("Original :",id, personInfo);
-console.log("Destructurning: ",id2, personInfo2);
